@@ -191,6 +191,11 @@ footer a:hover{
 
     padding: 20px;
 }
+.post-main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .post img,.post-video img{
     width: 100%;
@@ -209,7 +214,27 @@ footer a:hover{
     border-radius: 10px;
     transition: all 0.3s;
 }
+/* Limit paragraph height */
+.content {
+  max-height: 95px;   /* Adjust this */
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
 
+/* Expanded state */
+.content.expanded {
+  max-height: fit-content; /* Large enough to show full text */
+}
+
+.toggle-btn {
+  border: none;
+  background: none;
+  color: #1877f2;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+}
 .post-info{
     display: flex;
     flex-direction: row;
@@ -226,6 +251,15 @@ footer a:hover{
     display: flex;
     gap: 10px;
 }
-.time{
-    color: rgb(82, 82, 247);
+
+.post-owner img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.post-owner{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
