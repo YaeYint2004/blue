@@ -195,6 +195,7 @@ footer a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 
 .post img,.post-video img{
@@ -262,4 +263,15 @@ footer a:hover{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.tag{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px 20px;
+    background: green;
+    color:white;
+    border-radius: 5px;
+    font-size: 10px;
 }
