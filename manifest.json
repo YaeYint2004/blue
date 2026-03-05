@@ -1,0 +1,19 @@
+{
+  "name": "Blue Light Lab",
+  "short_name": "Bluelightlab",
+  "icons": [
+    {
+      "src": "img/Dark Blue Minimalist  Modern Technology Instagram Post.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "img/Dark Blue Minimalist  Modern Technology Instagram Post.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
