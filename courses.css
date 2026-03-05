@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    flex: 1;
+    max-width: 480px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    max-width: 480px;
+    height: fit-content;
+
+    background: rgb(82, 165, 247) url(img/pngwing.com\ \(1\).png) right no-repeat;
+    background-size: 500px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-top-sec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.nav-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-top-left p,
+.nav-top-right i {
+    font-size: 18px;
+}
+
+.nav-top-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-top-right i {
+    height: 50%;
+    padding: 5px 10px;
+    background-color: rgb(32, 136, 240);
+    border-radius: 5px;
+    position: relative;
+    max-height: 31px;
+}
+
+.noti {
+    display: flex;
+    position: relative;
+}
+
+.noti span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border-radius: 50%;
+}
+
+.nav-bottom-sec {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.search {
+    display: flex;
+    background-color: white;
+    flex: 1;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.search input {
+    flex: 1;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 0;
+
+}
+
+.nav-bottom-sec button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(32, 136, 240);
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    max-width: 480px;
+    background-color: white;
+    padding: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: sticky;
+    bottom: 0;
+    box-shadow:
+        0px 11px 8px -10px #f3f3f3,
+        0px -11px 8px -10px #e5e4e4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 100;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+footer i {
+    font-size: 20px;
+}
+
+footer a.active {
+    color: rgb(82, 165, 247);
+}
+
+footer span {
+    font-size: 12px;
+    text-align: center;
+}
+
+footer a:hover {
+    color: rgb(82, 165, 247);
+}
+
+/* Courses */
+.courses {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.course{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 
+    6px 6px 12px #bebebe,
+    -6px -6px 12px #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+}
+.course-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 
+    6px 6px 12px #bebebe,
+    -6px -6px 12px #ffffff;
+}
+
+.class-owner img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+     box-shadow: 
+    6px 6px 12px #bebebe,
+    -6px -6px 12px #ffffff;
+}
+
+.class-owner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.course-info p{
+    color: gray;
+}
