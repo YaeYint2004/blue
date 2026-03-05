@@ -11,6 +11,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 main{
     flex: 1;
@@ -25,7 +26,7 @@ nav{
     max-width: 480px;
     height: fit-content;
     
-    background: rgb(82, 82, 247) url(img/pngwing.com\ \(1\).png) right no-repeat;
+    background: rgb(82, 165, 247) url(img/pngwing.com\ \(1\).png) right no-repeat;
     background-size: 500px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -65,7 +66,7 @@ nav{
 .nav-top-right i{
     height: 50%;
     padding:  5px 10px;
-    background-color: rgb(48, 48, 246);
+    background-color: rgb(32, 136, 240);
     border-radius: 5px;
     position: relative;
     max-height: 31px;
@@ -90,33 +91,18 @@ nav{
     flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.search{
+.nav-bottom-sec div{
     display: flex;
-    background-color: white;
-    flex: 1;
+    flex-direction: column;
     align-items: center;
-    padding: 5px;
-    border-radius: 5px;
-    
+    flex-wrap: wrap;
+    color: white;
 }
 
-.search input{
-    flex: 1;
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    width: 0;
-    
-}
 
-.nav-bottom-sec button{
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-}
 
 /* Footer */
 
@@ -150,10 +136,10 @@ footer a{
     transition: all 0.3s;
 }
 footer i{
-    font-size: 18px;
+    font-size: 20px;
 }
 footer a.active{
-    color: rgb(82, 82, 247);
+    color: rgb(82, 165, 247);
 }
 footer span{
     font-size: 12px;
@@ -161,7 +147,7 @@ footer span{
 }
 
 footer a:hover{
-    color: rgb(82, 82, 247);
+    color: rgb(82, 165, 247);
 }
 /* Daily Posts */
 .daily-posts{
@@ -197,7 +183,9 @@ footer a:hover{
     gap: 20px;
     position: relative;
 }
-
+.post-main p{
+    color: gray;
+}
 .post img,.post-video img{
     width: 100%;
     height: 200px;
@@ -264,14 +252,33 @@ footer a:hover{
     flex-direction: row;
     gap: 20px;
 }
-
+.post-owner p{
+    color: gray;
+    font-size: 14px;
+}
 .tag{
     position: absolute;
     left: 10px;
     top: 10px;
     padding: 10px 20px;
-    background: green;
+    background: rgb(247, 3, 3);
     color:white;
     border-radius: 5px;
     font-size: 10px;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.ani{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
